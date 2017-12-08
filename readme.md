@@ -12,14 +12,15 @@ active tokens. A method is provided for invalidating tokens.
 
 The ```TescoMobile``` class provides the following methods:
 
-- ```__init__(phone_number, token, user_agent)``` Only requires the phone
-number.
-- ```send_pin_sms``` Send an auth pin to the user via SMS.
-- ```token_pin_exchange(pin)``` Exchange the pin for an auth token for future
-requests.
-- ```get_usage``` Get used and total values for allowances, billing data etc.
-- ```get_invoices``` Get a list of invoices for the account.
-- ```logout``` Invalidate the auth token.
+
+| Method | Action |
+|--|--|
+| ```__init__(phone_number, token, user_agent)``` | Constructor. Only requires the phone number. |
+| ```send_pin_sms()``` | Send an auth pin to the user via SMS. |
+| ```token_pin_exchange(pin)``` | Exchange the pin for an auth token for future requests. |
+| ```get_usage()``` | Get used and total values for allowances, billing data etc. |
+| ```get_invoices()``` | Get a list of invoices for the account. |
+| ```logout()``` | Invalidate the auth token. |
 
 Example:
 
