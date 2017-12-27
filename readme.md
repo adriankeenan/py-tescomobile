@@ -40,6 +40,18 @@ Example:
 
 The CLi app calls the ```get_usage``` method and formats the output.
 
+
+```
+Tesco Mobile - 07XXX XXXXXX - £XX.00 Usage Contract (XX Months)
+Bill cycle started      09/12/2017
+Bill cycle ends         09/01/2018
+Bill cycle                   18/31 [======================                ]  58%
+Minutes                   113/2000 [==                                    ]   5%
+Texts                      88/5000 [                                      ]   1%
+Data                     2022/4096 [==================                    ]  49%
+Safety buffer          £0.00/£2.50 [                                      ]   0%
+```
+
 The phone number and auth token are read from the ```TESCO_PHONENUMBER``` and
 ```TESCO_TOKEN``` env variables. The script wil call ```send_pin_sms``` and
 ```token_pin_exchange``` if these are not set.
