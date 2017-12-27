@@ -12,11 +12,13 @@ if __name__ == '__main__':
     import os
     import collections
     import shutil
-
     import datetime
+    from dotenv import load_dotenv, find_dotenv
+
     from tescomobile import TescoMobile
 
     # Get details from env
+    load_dotenv(find_dotenv())
     KEY_PHONENUMBER = 'TESCO_PHONENUMBER'
     KEY_TOKEN = 'TESCO_TOKEN'
 

@@ -53,5 +53,5 @@ Safety buffer          £0.00/£2.50 [                                      ]   
 ```
 
 The phone number and auth token are read from the ```TESCO_PHONENUMBER``` and
-```TESCO_TOKEN``` env variables. The script wil call ```send_pin_sms``` and
-```token_pin_exchange``` if these are not set.
+```TESCO_TOKEN``` env variables, read by [dotenv](https://github.com/theskumar/python-dotenv).
+The script wil call ```send_pin_sms``` and ```token_pin_exchange``` if these are not set.
