@@ -46,6 +46,8 @@ class TescoMobile(object):
             raise AttributeError('Phone number must be provided')
         if not isinstance(self.phone_number, str):
             raise TypeError('Phone number must be a string')
+        if self.phone_number[0] == '+':
+            raise AttributeError('Phone number must start with 07..., not +447...')
 
         self.token = token
 
