@@ -8,6 +8,12 @@ pin, the pin is then exchanged for an auth token used to authenticate all
 further requests. Auth tokens do not appear to expire and you can have multiple
 active tokens. A method is provided for invalidating tokens.
 
+Install from pip:
+
+```
+pip install tescomobile
+```
+
 ## API
 
 The ```TescoMobile``` class provides the following methods:
@@ -38,7 +44,8 @@ Example:
 
 ## CLi
 
-The CLi app calls the ```get_usage``` method and formats the output.
+The CLi app calls the ```get_usage``` method and formats the output. This script
+is not included in the pypi package - fetch it from the git repo instead.
 
 
 ```
@@ -54,4 +61,4 @@ Safety buffer          £0.00/£2.50 [                                      ]   
 
 The phone number and auth token are read from the ```TESCO_PHONENUMBER``` and
 ```TESCO_TOKEN``` env variables, read by [dotenv](https://github.com/theskumar/python-dotenv).
-The script wil call ```send_pin_sms``` and ```token_pin_exchange``` if these are not set.
+The script will call ```send_pin_sms``` and ```token_pin_exchange``` if these are not set.
