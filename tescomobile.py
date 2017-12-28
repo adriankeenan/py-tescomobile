@@ -72,7 +72,7 @@ class TescoMobile(object):
         }
 
         body = {
-            'subscriberNumber': str(self.phone_number)
+            'subscriberNumber': self.phone_number
         }
 
         response = requests.post(
@@ -100,7 +100,7 @@ class TescoMobile(object):
 
         body = {
             'pinCode': str(pin),
-            'subscriptionNumber': str(self.phone_number)
+            'subscriptionNumber': self.phone_number
         }
 
         response = requests.post(
@@ -136,7 +136,7 @@ class TescoMobile(object):
         }
 
         body = {
-            'subscriptionNumber': str(self.phone_number)
+            'subscriptionNumber': self.phone_number
         }
 
         response = requests.post(
